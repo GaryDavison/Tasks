@@ -1,4 +1,7 @@
 Tasks::Application.routes.draw do
+  root 'welcome#home'
+  get "welcome/home"
+  get "welcome/help"
   resources :todos
 
   # The priority is based upon order of creation: first created -> highest priority.
